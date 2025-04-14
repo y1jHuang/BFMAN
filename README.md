@@ -7,24 +7,24 @@
 ## File Structure
 
 `/R code/src` contains required functions to implement BFMAN:
-	`../func_lib.R` includes `pmom()` to obtain the density of pMOM distribution, `pos_eta()` to obtain the posterior of scores $\eta$, and `MH()` as a sampling algorithm. 
-	`../mdl.R` includes codes of BFMAN and MGPS (multiplicative Gamma process shrinkage prior) for parallel jobs. It is called by our simulation study,
+	&emsp;`../func_lib.R` includes `pmom()` to obtain the density of pMOM distribution, `pos_eta()` to obtain the posterior of scores $\eta$, and `MH()` as a sampling algorithm. 
+	&emsp;`../mdl.R` includes codes of BFMAN and MGPS (multiplicative Gamma process shrinkage prior) for parallel jobs. It is called by our simulation study,
 
 `/R code/simul` contains files for simulation.	
-	under `../scripts` folder: 
-		`../data_gen.R` is used for data generation. For specific settings, please refer to our paper.
-		`../main.R` is used for calling different models with replications.
-		`../simul_debug.R` is a simplified script for running BFMAN
-		`../eval_perform.R` is used to reorganize the outputs and compare the performance of various models
-	`../data` folder contains simulated data with different scenarios
-	`../results` folder stores output of BFMAN and MGPS
+	&emsp;under `../scripts` folder: 
+		&emsp;&emsp;`../data_gen.R` is used for data generation. For specific settings, please refer to our paper.
+		&emsp;&emsp;`../main.R` is used for calling different models with replications.
+		&emsp;&emsp;`../simul_debug.R` is a simplified script for running BFMAN
+		&emsp;&emsp;`../eval_perform.R` is used to reorganize the outputs and compare the performance of various models
+	&emsp;`../data` folder contains simulated data with different scenarios
+	&emsp;`../results` folder stores output of BFMAN and MGPS
 
 `/R code/nutrients` contains files for real data analysis.
-	under `../scripts` folder:
-		`../nut_analy.R`  is for applying BFMAN on HCHS/SOL data set
-		`../nut_vis.R` is for visualizing output of BFMAN, including heatmap of loading matrix $\Lambda$, and OR estimation via Bayesian generalized linear regression
-	`../data` folder contains the data files that includes nutrient consumptions, health records and demographic information
-	`../results` folder stores output of `nut_analy.R`
+	&emsp;under `../scripts` folder:
+		&emsp;&emsp;`../nut_analy.R`  is for applying BFMAN on HCHS/SOL data set
+		&emsp;&emsp;`../nut_vis.R` is for visualizing output of BFMAN, including heatmap of loading matrix $\Lambda$, and OR estimation via Bayesian generalized linear regression
+	&emsp;`../data` folder contains the data files that includes nutrient consumptions, health records and demographic information
+	&emsp;`../results` folder stores output of `nut_analy.R`
 
 ## Quick start
 
