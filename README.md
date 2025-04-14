@@ -34,14 +34,12 @@ After running the full script, `Lambda_hat` is the estimated $\Lambda$ obtained 
 
 ## Model Specification
 
-For generic form of factor model:
-$$
-y_i = \Lambda \eta_i + \epsilon_i, (i = 1,\cdots, n)
-$$
-$y_i \in \mathbb{R}^p$ observed variables
-$\Lambda \in \mathbb{R}^{p \times k}$: factor loadings
-$\eta_i \in \mathbb{R}^k$: latent factor scores
-$\epsilon_i \sim \mathcal{N}_p(0, \Sigma)$ is the error term with covariance $\Sigma = \mbox{diag}(\sigma_1^2, \cdots, \sigma_p^2)$
+For generic form of factor model:  
+$y_i = \Lambda \eta_i + \epsilon_i, (i = 1,\cdots, n)$  
+$y_i \in \mathbb{R}^p$ observed variables  
+$\Lambda \in \mathbb{R}^{p \times k}$: factor loadings  
+$\eta_i \in \mathbb{R}^k$: latent factor scores  
+$\epsilon_i \sim \mathcal{N}_p(0, \Sigma)$ is the error term with covariance $\Sigma = \mbox{diag}(\sigma_1^2, \cdots, \sigma_p^2)$  
 
 we specify MGPS on factor loadings $\Lambda$:
 $$
