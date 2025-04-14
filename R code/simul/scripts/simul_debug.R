@@ -1,7 +1,7 @@
 library(tidyverse)
 library(LaplacesDemon)
 library(FactoMineR)
-source("func_lib.R")
+source("../../src/func_lib.R")
 
 # trim <- function(x){
 #   x <- as.matrix(x)
