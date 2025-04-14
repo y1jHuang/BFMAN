@@ -19,10 +19,10 @@
 	&emsp;`../data` folder contains simulated data with different scenarios.  
 	&emsp;`../results` folder stores output of BFMAN and MGPS.  
 
-`/R code/nutrients` contains files for real data analysis.
-	&emsp;under `../scripts` folder:
+`/R code/nutrients` contains files for real data analysis.  
+	&emsp;under `../scripts` folder:  
 		&emsp;&emsp;`../nut_analy.R`  is for applying BFMAN on HCHS/SOL data set.  
-		&emsp;&emsp;`../nut_vis.R` is for visualizing output of BFMAN, including heatmap of loading matrix $\Lambda$, and OR estimation via Bayesian generalized linear regression.  
+		&emsp;&emsp;`../nut_vis.R` is for visualizing output of BFMAN, including heatmap of loading matrix $\Lambda$, and OR estimation via Bayesian generalized linear regression.   
 	&emsp;`../data` folder contains the data files that includes nutrient consumptions, health records and demographic information.  
 	&emsp;`../results` folder stores output of `nut_analy.R`.  
 
