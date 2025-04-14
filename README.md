@@ -41,15 +41,14 @@ $\eta_i \in \mathbb{R}^k$: latent factor scores
 $\epsilon_i \sim \mathcal{N}_p(0, \Sigma)$ is the error term with covariance $\Sigma = \mbox{diag}(\sigma_1^2, \cdots, \sigma_p^2)$  
 
 we specify MGPS on factor loadings $\Lambda$:  
-$\lambda_{jh} \mid \phi_{jh}, \tau_h \sim \mathcal{N}(0, \phi_{jh}^{-1} \tau_h^{-1}) \\
-\phi_{jh} \sim \mathrm{Ga}(\nu/2, \nu/2)\\
-\tau_h = \prod_{l=1}^{h} \delta_l, \quad
+$\lambda_{jh} \mid \phi_{jh}, \tau_h \sim \mathcal{N}(0, \phi_{jh}^{-1} \tau_h^{-1})$  
+$\phi_{jh} \sim \mathrm{Ga}(\nu/2, \nu/2)$  
+$\tau_h = \prod_{l=1}^{h} \delta_l, \quad
 \delta_1 \sim \mathrm{Ga}(a_1, 1), \quad 
-\delta_l \sim \mathrm{Ga}(a_2, 1), \quad l \ge 2
-$  
+\delta_l \sim \mathrm{Ga}(a_2, 1), \quad l \ge 2$  
 
 Mass-nonlocal prior on scores $\eta_i$:  
-$\eta_{ih} \sim (1 - Z_{ih}) \delta_0(\eta_{ih}) + Z_{ih} \ \mbox{pMOM}(\eta_{ih}) \\
-Z_{ih} \sim \mbox{Bern}(\theta_h), \theta_h \sim \mbox{Beta}(\alpha, \beta)$  
+$\eta_{ih} \sim (1 - Z_{ih}) \delta_0(\eta_{ih}) + Z_{ih} \ \mbox{pMOM}(\eta_{ih})$  
+$Z_{ih} \sim \mbox{Bern}(\theta_h), \theta_h \sim \mbox{Beta}(\alpha, \beta)$  
 
 A Gibbs sampler embedded with Metropolis-Hastings algorithm is derived for parameter estimation.
