@@ -49,9 +49,7 @@ $\lambda_{jh} \mid \phi_{jh}, \tau_h \sim \mathcal{N}(0, \phi_{jh}^{-1} \tau_h^{
 $  
 
 Mass-nonlocal prior on scores $\eta_i$:  
-$
-\eta_{ih} \sim (1 - Z_{ih}) \delta_0(\eta_{ih}) + Z_{ih} \ \mbox{pMOM}(\eta_{ih}) \\
-Z_{ih} \sim \mbox{Bern}(\theta_h), \theta_h \sim \mbox{Beta}(\alpha, \beta)
-$
+$\eta_{ih} \sim (1 - Z_{ih}) \delta_0(\eta_{ih}) + Z_{ih} \ \mbox{pMOM}(\eta_{ih}) \\
+Z_{ih} \sim \mbox{Bern}(\theta_h), \theta_h \sim \mbox{Beta}(\alpha, \beta)$  
 
 A Gibbs sampler embedded with Metropolis-Hastings algorithm is derived for parameter estimation.
