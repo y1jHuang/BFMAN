@@ -23,7 +23,6 @@
 	&emsp;under `../scripts` folder:  
 		&emsp;&emsp;`../nut_analy.R`  is for applying BFMAN on HCHS/SOL data set.  
 		&emsp;&emsp;`../nut_vis.R` is for visualizing output of BFMAN, including heatmap of loading matrix $\Lambda$, and OR estimation via Bayesian generalized linear regression.   
-	&emsp;`../data` folder contains the data files that includes nutrient consumptions, health records and demographic information.  
 	&emsp;`../results` folder stores output of `nut_analy.R`.  
 
 ## Quick start
