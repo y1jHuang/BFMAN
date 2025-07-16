@@ -4,7 +4,7 @@ BFMAN <- function(Y, num_iter = 500,  num_burn = 300, thin = 1,
   # Parameter initialization
   N <- nrow(Y)
   p <- ncol(Y)
-  #std <- apply(Y, 2, sd)
+  # std <- apply(Y, 2, sd)
   # Y <- scale(Y)
   
   k_ast <- ncol(Lambda0) * 2 # Initial guess of k
@@ -69,8 +69,9 @@ BFMAN <- function(Y, num_iter = 500,  num_burn = 300, thin = 1,
       }
     }
     
-    # Update theta
+    # Update theta & psi
     theta <- sapply(1:k_ast, function(k){rbeta(1, sum(Z[, k])+a_theta, N-sum(Z[, k])+b_theta)})
+    psi <- 1 / 3 / theta
     
     # update Lambda
     Lambda <- sapply(1:p, function(j){
