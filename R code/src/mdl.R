@@ -62,7 +62,7 @@ BFMAN <- function(Y, num_iter = 500,  num_burn = 300, thin = 1,
         if (Z[i, k]){
           a <- 0.5 * (Sigma_inv %*% Lambda[,k]^2 + 1/psi)
           b <- 0.5 * Lambda[, k] %*% diag(Sigma_inv) %*% (Lambda[, -k] %*% eta[i,-k] - Y[i,])
-          eta[i, k] <- MH(func=pos_eta, init=eta[i, k], M=2, a=a, b=b, sd_value=1)
+          eta[i, k] <- MH(func=pos_eta, init=eta[i, k], M=2, a=a, b=b, step_size=1)
         } else {
           eta[i, k] <- 0
         }
