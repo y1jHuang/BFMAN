@@ -22,7 +22,7 @@ for (file in file_path){
     Lambda0 <- data[[rep]]$Lambda
     eta0 <- data[[rep]]$eta
     Sigma0 <- data[[rep]]$Sigma
-    sparse_bayes(Y, num_iter, num_burn, 
+    MGPS(Y, num_iter, num_burn, 
                  eta0=eta0, 
                  Lambda0=Lambda0, 
                  Sigma0=Sigma0)}
