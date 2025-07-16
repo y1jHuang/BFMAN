@@ -90,8 +90,9 @@ for (iter in 1:num_iter){
     }
   }
   
-  # update theta
+  # update theta & psi
   theta <- rbeta(1, sum(Z)+a_theta, N*k_ast-sum(Z)+b_theta)
+  psi <- 1 / 3 / theta
   
   # update Lambda
   Lambda <- sapply(1:p, function(j){
